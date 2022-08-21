@@ -1,3 +1,0 @@
-/home/sam/Desktop/c++/80286/build/CMakeFiles/80286.dir
-/home/sam/Desktop/c++/80286/build/CMakeFiles/edit_cache.dir
-/home/sam/Desktop/c++/80286/build/CMakeFiles/rebuild_cache.dir
