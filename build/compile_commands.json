@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/sam/Desktop/c++/80286/build",
+  "command": "/usr/bin/g++ -I/home/sam/Desktop/c++/80286/include -g -o CMakeFiles/80286.dir/src/add.cpp.o -c /home/sam/Desktop/c++/80286/src/add.cpp",
+  "file": "/home/sam/Desktop/c++/80286/src/add.cpp"
+},
+{
+  "directory": "/home/sam/Desktop/c++/80286/build",
+  "command": "/usr/bin/g++ -I/home/sam/Desktop/c++/80286/include -g -o CMakeFiles/80286.dir/src/cpu.cpp.o -c /home/sam/Desktop/c++/80286/src/cpu.cpp",
+  "file": "/home/sam/Desktop/c++/80286/src/cpu.cpp"
+},
+{
+  "directory": "/home/sam/Desktop/c++/80286/build",
+  "command": "/usr/bin/g++ -I/home/sam/Desktop/c++/80286/include -g -o CMakeFiles/80286.dir/src/flags.cpp.o -c /home/sam/Desktop/c++/80286/src/flags.cpp",
+  "file": "/home/sam/Desktop/c++/80286/src/flags.cpp"
+},
+{
+  "directory": "/home/sam/Desktop/c++/80286/build",
+  "command": "/usr/bin/g++ -I/home/sam/Desktop/c++/80286/include -g -o CMakeFiles/80286.dir/src/genpurp.cpp.o -c /home/sam/Desktop/c++/80286/src/genpurp.cpp",
+  "file": "/home/sam/Desktop/c++/80286/src/genpurp.cpp"
+},
+{
+  "directory": "/home/sam/Desktop/c++/80286/build",
+  "command": "/usr/bin/g++ -I/home/sam/Desktop/c++/80286/include -g -o CMakeFiles/80286.dir/src/main.cpp.o -c /home/sam/Desktop/c++/80286/src/main.cpp",
+  "file": "/home/sam/Desktop/c++/80286/src/main.cpp"
+},
+{
+  "directory": "/home/sam/Desktop/c++/80286/build",
+  "command": "/usr/bin/g++ -I/home/sam/Desktop/c++/80286/include -g -o CMakeFiles/80286.dir/src/sub.cpp.o -c /home/sam/Desktop/c++/80286/src/sub.cpp",
+  "file": "/home/sam/Desktop/c++/80286/src/sub.cpp"
+},
+{
+  "directory": "/home/sam/Desktop/c++/80286/build",
+  "command": "/usr/bin/g++ -I/home/sam/Desktop/c++/80286/include -g -o CMakeFiles/80286.dir/src/logic.cpp.o -c /home/sam/Desktop/c++/80286/src/logic.cpp",
+  "file": "/home/sam/Desktop/c++/80286/src/logic.cpp"
+},
+{
+  "directory": "/home/sam/Desktop/c++/80286/build",
+  "command": "/usr/bin/g++ -I/home/sam/Desktop/c++/80286/include -g -o CMakeFiles/80286.dir/src/uncondtrans.cpp.o -c /home/sam/Desktop/c++/80286/src/uncondtrans.cpp",
+  "file": "/home/sam/Desktop/c++/80286/src/uncondtrans.cpp"
+}
+]
