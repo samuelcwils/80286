@@ -45,6 +45,10 @@ void putMem16(uint16_t seg, uint16_t off, uint16_t val){
     putMem8(seg, off + 1, val & 0xff);
 }
 
+uint8_t* getRM(){
+    return &getMem8(cs, ip);
+}
+
 void init()
 {
     for(int i = 0; i < 256; i++)
