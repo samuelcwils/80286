@@ -52,8 +52,6 @@ void putMem16(word w){
     mem[w.seg * 16 + w.off] = w.val;
 }
 
-void 
-
 uint8_t* getRM(){
     uint8_t temp = getMem8(cs, ip);
     switch (temp)

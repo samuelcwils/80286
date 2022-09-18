@@ -106,28 +106,81 @@ void iff(bool set);
 void df(bool set);
 
 //add
-void ADD(uint8_t &dest, uint8_t &src);
-void ADD(uint16_t &dest, uint16_t &src);
-void ADC(uint8_t &dest, uint8_t src);
+template <typename T, typename D>
+void ADD(T &dest, D &src);
+
+template <typename T, typename D>
+void ADD(T &dest, D &src);
+
+template <typename T, typename D>
+void ADC(T &dest, D src);
+
+template <typename T, typename D>
 void ADC(uint16_t &dest, uint16_t src);
+
+template <typename T>
 void INC(uint8_t &dest);
+
+template <typename T>
 void INC(uint16_t &dest);
+
 void AAA();
 void DAA();
 
 //sub
+template <typename T, typename D>
 void SUB(uint8_t &dest, uint8_t &src);
+
+template <typename T, typename D>
 void SUB(uint16_t &dest, uint16_t &src);
+
+template <typename T, typename D>
 void SBB(uint8_t &dest, uint8_t src);
+
+template <typename T, typename D>
 void SBB(uint16_t &dest, uint16_t src);
+
+template <typename T>
 void DEC(uint8_t &dest);
+
+template <typename T>
 void DEC(uint16_t &dest);
+
 void AAS();
 
+//logic 
+template <typename T>
+void NOT(uint8_t *dest);
+
+template <typename T>
+void NOT16(uint16_t *dest);
+
+template <typename T>
+void AND(uint8_t &dest, uint8_t &src);
+
+template <typename T>
+void AND(uint16_t &dest, uint16_t &src);
+
+template <typename T>
+void OR(uint8_t &dest, uint8_t &src);
+
+template <typename T>
+void OR(uint16_t &dest, uint16_t &src);
+
+template <typename T>
+void XOR(uint8_t &dest, uint8_t &src);
+
+template <typename T>
+void XOR(uint16_t &dest, uint16_t &src);
+
 //general purpose
+template <typename T, typename D>
 void MOV(uint8_t &dest, uint8_t &src);
+
+template <typename T, typename D>
 void MOV(uint16_t &dest, uint16_t &src);
 
 //unconditional transfers
+template <typename T>  
 void JMP(uint16_t addr);
 

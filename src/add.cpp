@@ -1,6 +1,7 @@
 #include "cpu.h"
 
-void ADD(uint8_t &dest, uint8_t &src){
+template <typename T, typename D>
+void ADD(T &dest, D &src){
     temp = dest + src;
     cf8(temp);
     pf8(temp);
@@ -11,6 +12,7 @@ void ADD(uint8_t &dest, uint8_t &src){
     dest = temp;
 }
 
+template <typename T, typename D>
 void ADD(uint16_t &dest, uint16_t &src){
     temp = dest + src;
     cf16(dest);
@@ -22,6 +24,7 @@ void ADD(uint16_t &dest, uint16_t &src){
     dest = temp;
 }
 
+template <typename T, typename D>
 void ADC(uint8_t &dest, uint8_t src){
     src = src + msw.cf;
     temp = dest + src;
@@ -34,6 +37,7 @@ void ADC(uint8_t &dest, uint8_t src){
     dest = temp;
 }
 
+template <typename T, typename D>
 void ADC(uint16_t &dest, uint16_t src){
     src = src + msw.cf;
     temp = dest + src;
@@ -46,6 +50,7 @@ void ADC(uint16_t &dest, uint16_t src){
     dest = temp;
 }
 
+template <typename T, typename D>
 void INC(uint8_t &dest){
     temp = dest + 1;
     cf8(temp);
@@ -57,6 +62,7 @@ void INC(uint8_t &dest){
     dest = temp;
 }
 
+template <typename T, typename D>
 void INC(uint16_t &dest){
     temp = dest + 1;
     cf16(temp);
