@@ -1,6 +1,7 @@
 #pragma once 
 #include "stdint.h"
 #include "stdbool.h"
+#include "types.h"
 
 extern uint8_t mem[8000];
 
@@ -84,7 +85,8 @@ uint16_t getMem16(uint16_t seg, uint16_t off);
 
 void putMem8(uint16_t seg, uint16_t off, uint8_t val);
 void putMem16(uint16_t seg, uint16_t off, uint16_t val);
-
+void putMem8(byte b);
+void putMem16(word w);
 
 //flags
 void cf8(unsigned int a);

@@ -31,8 +31,7 @@ uint8_t getMem8(uint16_t seg, uint16_t off){
     return mem[seg * 16 + off];
 }
 
-uint16_t getMem16(uint16_t seg, uint16_t off)
-{
+uint16_t getMem16(uint16_t seg, uint16_t off){
     return (getMem8(seg, off) << 8) | getMem8(seg, off + 1);
 }
 
@@ -45,8 +44,28 @@ void putMem16(uint16_t seg, uint16_t off, uint16_t val){
     putMem8(seg, off + 1, val & 0xff);
 }
 
+void putMem8(byte b){
+    mem[b.seg * 16 + b.off] = b.val;
+}
+
+void putMem16(word w){
+    mem[w.seg * 16 + w.off] = w.val;
+}
+
+void 
+
 uint8_t* getRM(){
-    return &getMem8(cs, ip);
+    uint8_t temp = getMem8(cs, ip);
+    switch (temp)
+    {
+    case 0x00:
+        return getMem8(bx.bx, si);
+        break;
+    
+    default:
+        break;
+    }
+
 }
 
 void init()

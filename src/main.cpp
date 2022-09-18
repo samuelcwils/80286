@@ -11,6 +11,8 @@
         func(op1, op2); \
         break; \
 
+//add word and byte structs with templates in functions
+
 int main()
 {
     mem[7997] = 1;
@@ -30,7 +32,7 @@ int main()
             instruction1(1, JMP, getMem16(cs, ip))
     
             default:
-            break;
+               break;
         }
 
         i++;

@@ -16,6 +16,7 @@ void AND(uint8_t &dest, uint8_t &src)
     zf16(temp);
     sf16(temp);
     msw.of = 0;
+    dest = temp;
 }
 
 void AND(uint16_t &dest, uint16_t &src)
@@ -26,6 +27,7 @@ void AND(uint16_t &dest, uint16_t &src)
     zf16(temp);
     sf16(temp);
     msw.of = 0;
+    dest = temp;
 }
 
 void OR(uint8_t &dest, uint8_t &src)
@@ -36,6 +38,7 @@ void OR(uint8_t &dest, uint8_t &src)
     zf16(temp);
     sf16(temp);
     msw.of = 0;
+    dest = temp;
 }
 
 void OR(uint16_t &dest, uint16_t &src)
@@ -46,6 +49,7 @@ void OR(uint16_t &dest, uint16_t &src)
     zf16(temp);
     sf16(temp);
     msw.of = 0;
+    dest = temp;
 }
 
 void XOR(uint8_t &dest, uint8_t &src)
@@ -56,6 +60,7 @@ void XOR(uint8_t &dest, uint8_t &src)
     zf16(temp);
     sf16(temp);
     msw.of = 0;
+    dest = temp;
 }
 
 void XOR(uint16_t &dest, uint16_t &src)
@@ -66,4 +71,5 @@ void XOR(uint16_t &dest, uint16_t &src)
     zf16(temp);
     sf16(temp);
     msw.of = 0;
+    dest = temp;
 }
